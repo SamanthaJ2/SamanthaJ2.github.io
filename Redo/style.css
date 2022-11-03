@@ -6,15 +6,13 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #333;
-  color: #222;
-  overflow-x: hidden;
+  background-color: #7b876d;
+  color: #989e8b;
+  overflow-x: hidden; /* hides scroll bar on the y axis */
   margin: 0;
 }
 
-img {
-  border-top-right-radius: 35%;
-  border-top-left-radius: 35%;
+#aboutMe img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -28,6 +26,7 @@ img {
 section ul {
   display: flex;
   padding-left: 1.5em;
+  padding-right: 1.5em;
   list-style: none;
   flex-flow: row;
   justify-content: space-around;
@@ -37,11 +36,11 @@ section ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 50%;
+  width: 40%;
   font-weight: bold;
 }
 .container {
-  background-color: #fafafa;
+  background-color: #DDB8A6 ;
   transform-origin: top left;
   transition: transform 0.5s linear;
   width: 100vw;
@@ -53,14 +52,14 @@ section ul {
   transform: rotate(-20deg);
 }
 
-.circle-container {
+.circle-container { /* circle placemnt on the screen*/
   position: fixed;
   top: -100px;
   left: -100px;
 }
 
 .circle {
-  background-color: #ff7979;
+  background-color: #c67f43;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -118,7 +117,7 @@ nav ul {
 nav ul li {
   text-transform: uppercase;
   color: #fff;
-  margin: 40px 0;
+  margin: 65px 0;
   transform: translateX(-100%);
   transition: transform 0.4s ease-in;
 }
@@ -145,7 +144,7 @@ nav a{
 }
 
 nav a:hover {
-  color: #FF7979;
+  color:  #c67f43;
   font-weight: bold;
 }
 
@@ -153,21 +152,27 @@ nav a:hover {
   max-width: 100%;
 }
 
-.content {
+.content { /*need*/
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 75px auto;
 }
 
-.content h1 {
-  margin: 0;
-}
-
-.content small {
-  color: #555;
-  font-style: italic;
-}
-
-.content p {
+.content p { /*need*/
   color: #333;
   line-height: 1.5;
+}
+.aboutMe{
+opacity: calc(100);
+}
+.projects{
+opacity: calc(0);
+}
+.media{
+opacity: calc(0);
+}
+.hidden {
+  opacity: calc(0);
+}
+.unhide {
+  opacity: calc(100);
 }
