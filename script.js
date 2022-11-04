@@ -11,23 +11,23 @@ close.addEventListener('click', () => container.classList.remove('show-nav'))
 
 aboutMe.addEventListener('click', () => {
     container.classList.remove('show-nav');
-    document.getElementById("projects").className = "hidden";
-    document.getElementById("additionalMedia").className = "hidden";
-    document.getElementById("aboutMe").className = "unhide";
+    document.getElementById("projects").style.display = "none";
+    document.getElementById("additionalMedia").style.display = "none";
+    document.getElementById("aboutMe").style.display = "block";
   
 });
 projects.addEventListener('click', () => {
     container.classList.remove('show-nav');
-    document.getElementById("aboutMe").className = "hidden";
-    document.getElementById("additionalMedia").className = "hidden";
-    document.getElementById("projects").className = "unhide";
+    document.getElementById("aboutMe").style.display = "none";
+    document.getElementById("additionalMedia").style.display = "none";
+    document.getElementById("projects").style.display = "block";
   
 });
 additionalMedia.addEventListener('click', () => {
     container.classList.remove('show-nav');
-    document.getElementById("projects").className = "hidden";
-    document.getElementById("aboutMe").className = "hidden";
-    document.getElementById("additionalMedia").className = "unhide";
+    document.getElementById("projects").style.display = "none";
+    document.getElementById("aboutMe").style.display = "none";
+    document.getElementById("additionalMedia").style.display = "block";
  
 });
 

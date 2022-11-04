@@ -10,6 +10,7 @@ body {
   color: #c67f43;
   overflow-x: hidden; /* hides scroll bar on the y axis */
   margin: 0;
+  height: fit-content;
 }
 
 .aboutMePic  {
@@ -31,6 +32,11 @@ h1 {
 }
 h2 {
   margin: 0;
+}
+
+table {
+  color: #333;
+  line-height: 1.5;
 }
 
 #icon {
@@ -80,8 +86,8 @@ section ul {
   background-color: #DDB8A6 ;
   transform-origin: top left;
   transition: transform 0.5s linear;
-  width: 100vw;
-  min-height: 100vh;
+  width: auto;
+  max-height: auto;
   padding: 30px;
 }
 
@@ -140,10 +146,11 @@ section ul {
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   bottom: 40px;
   left: 0;
-  z-index: 100;
+  z-index: 0;
+  top: 0em;
 }
 
 nav ul {
@@ -190,29 +197,25 @@ nav a:hover {
   margin: 75px auto;
 }
 
-table {
-  color: #333;
-  line-height: 1.5;
-}
-
 .content p {
   color: #333;
   line-height: 1.5;
   margin: 0;
 }
 
-.aboutMe{
-opacity: calc(100);
+.aboutMe {
+display: block;
 }
 
-.projects, .media{
-opacity: calc(0);
+.projects {
+  max-width: auto;
+  max-height: auto;
+  display: none;
 }
-
-.hidden {
+.bottom {
+  display: none;
+}
+.media {
   display: none;
 }
 
-.unhide {
-  opacity: calc(100);
-}
