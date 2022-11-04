@@ -29,6 +29,9 @@ h1 {
   font-size: 100px;
   font-variant:normal;
 }
+h2 {
+  margin: 0;
+}
 
 #icon {
   border-radius: 39%;
@@ -55,11 +58,11 @@ section ul {
 }
 
 .edu {
+  display: flex;
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-bottom: 1.5em;
   list-style: none;
-
   justify-content: space-around;
   max-height: 8whs ;
 }
@@ -187,7 +190,7 @@ nav a:hover {
   margin: 75px auto;
 }
 
-.edu {
+table {
   color: #333;
   line-height: 1.5;
 }
@@ -195,6 +198,7 @@ nav a:hover {
 .content p {
   color: #333;
   line-height: 1.5;
+  margin: 0;
 }
 
 .aboutMe{
