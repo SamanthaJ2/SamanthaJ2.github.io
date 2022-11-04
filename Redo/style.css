@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sacramento&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #7b876d;
   color: #c67f43;
   overflow-x: hidden; /* hides scroll bar on the y axis */
@@ -13,38 +13,48 @@ body {
 }
 
 .aboutMePic  {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-left: 1em;
-    margin-right: auto;
-    float: right;
-    border-top-right-radius: 40%;
-    border-top-left-radius: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 1em;
+  margin-right: auto;
+  float: right;
+  border-top-right-radius: 40%;
+  border-top-left-radius: 40%;
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+  margin: 0;
+  font-size: 100px;
+  font-variant:normal;
+}
+
+#icon {
+  border-radius: 39%;
+}
+
+img {
+  max-width: 100%;
 }
 
 section ul {
   display: flex;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  padding-bottom: 15em;
+  list-style: none;
+  flex-flow: row;
+  justify-content: space-around
+}
+
+.icons  {
+  display: flex;
+  padding-bottom: 1.5em;
+  padding-left: 0%;
   list-style: none;
   flex-flow: row;
   justify-content: space-around;
-  max-height: 8whs ;
 }
-.icons  {
-  display: flex;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  padding-bottom: 1.5em;
-  list-style: none;
-  flex-flow: column;
-  justify-content: space-around;
-  max-height: 8whs ;
-}
+
 .edu {
-
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-bottom: 1.5em;
@@ -53,6 +63,7 @@ section ul {
   justify-content: space-around;
   max-height: 8whs ;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -61,7 +72,8 @@ section ul {
   width: 40%;
   font-weight: bold;
 }
-.container {
+
+.container { /* content */
   background-color: #DDB8A6 ;
   transform-origin: top left;
   transition: transform 0.5s linear;
@@ -74,14 +86,8 @@ section ul {
   transform: rotate(-20deg);
 }
 
-.circle-container { /* circle placemnt on the screen*/
-  position: fixed;
-  top: -100px;
-  left: -100px;
-}
-
-.circle {
-  background-color: #c67f43;
+.circle { /* circle size */
+  background-color: #c67f43; 
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -89,8 +95,14 @@ section ul {
   transition: transform 0.5s linear;
 }
 
-.container.show-nav .circle {
+.container.show-nav .circle { /*container roating to show the nav  */
   transform: rotate(-70deg);
+}
+
+.circle-container { /* circle placemnt on the screen */
+  position: fixed;
+  top: -100px;
+  left: -100px;
 }
 
 .circle button {
@@ -159,7 +171,7 @@ nav ul li + li + li {
   transform: translateX(-200%);
 }
 
-nav a{
+nav a {
   color: #fafafa;
   text-decoration: none;
   transition: all 0.5s;
@@ -170,26 +182,25 @@ nav a:hover {
   font-weight: bold;
 }
 
-.content img {
-  max-width: 100%;
-}
-
 .content {
   max-width: 1000px;
   margin: 75px auto;
 }
-.edu { /*need*/
+
+.edu {
   color: #333;
   line-height: 1.5;
 }
 
-.content p { /*need*/
+.content p {
   color: #333;
   line-height: 1.5;
 }
+
 .aboutMe{
 opacity: calc(100);
 }
+
 .projects, .media{
 opacity: calc(0);
 }
@@ -197,6 +208,7 @@ opacity: calc(0);
 .hidden {
   display: none;
 }
+
 .unhide {
   opacity: calc(100);
 }
