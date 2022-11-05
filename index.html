@@ -1,111 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Samantha Johnson Portfolio</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="circle-container">
-        <div class="circle">
-          <button id="close">
-            <i class="fas fa-times"></i>
-          </button>
-          <button id="open">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Samantha Johnson Portfolio</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="circle-container">
+      <div class="circle">
+        <button id="close">
+          <i class="fas fa-times"></i>
+        </button>
+        <button id="open">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
+    </div>
     <div class="content">
-      <nav> <!-- Nav Bar -->
+      <nav>
+        <!-- Nav Bar -->
         <ul>
-          <li> <a id="aboutMeLink" href="#aboutMe">About Me.</a></li> 
-          <li> <a id="projectsLink" href="#projects">Projects.</a></li> 
-          <li> <a id="additionalMediaLink" href="#additionalMedia">Contact.</a></li> 
+          <li> <a id="aboutMeLink" href="#aboutMe">About Me.</a></li>
+          <li> <a id="projectsLink" href="#projects">Projects.</a></li>
+          <li> <a id="additionalMediaLink" href="#additionalMedia">Contact.</a></li>
         </ul>
       </nav>
-    </div>
-      <h1>Samantha Johnson</h1>
-  <main>
-    <img class="aboutMePic" src="/images/B&WProfilePic1.jpg" alt="Samantha">
-      <section id="aboutMe" class="aboutMe">
-          <h2>Background</h2>
-        <article id="aboutMeContent">
-          <p>Quality and Customer focused Software Support Specialist transitioning into a 
-            Software Development role. Graduated from an intensive coding Bootcamp with a 
-            Certificate of Software Development. Built front-end and back-end web applications 
-            using full-stack C# .NET, MVC, Node.js, and other frameworks. Ready to join your 
-            development team to contribute to your success through enhanced customer experience.</p>
-            <h2 id="edu">Education</h2>
+
+
+      <main>
+        <h1>Samantha Johnson</h1>
+        <img class="aboutMePic" src="/images/B&WProfilePic1.jpg" alt="Samantha">
+        <section id="aboutMe" class="aboutMe">
+              <h2>Background</h2>
+          <article id="aboutMeContent">
+            <p>Quality and Customer focused Software Support Specialist transitioning into a
+              Software Development role. Graduated from an intensive coding Bootcamp with a
+              Certificate of Software Development. Built front-end and back-end web applications
+              using full-stack C# .NET, MVC, Node.js, and other frameworks. Ready to join your
+              development team to contribute to your success through enhanced customer experience.
+            </p>
+               <h2 id="edu">Education</h2>
             <p>
-              ✤ Coursera, Online		Jan 2022
+              ✤ Coursera, Online Jan 2022
               Certificate in Cybersecurity Roles, Processes, and Operation Systems Security
               <br>
-              <br>
-              ✤ We Can Code IT, Cleveland, OH	  Dec 2022
-              Certificate of Software Development  
+              ✤ We Can Code IT, Cleveland, OH Dec 2022
+              Certificate of Software Development
               <br>
             </p>
-            
-            <h2 id="skills">Soft Skills</h2>
-            <table style="width:100%">
-              <tr>
-                <td>✤ Attention to detail</td>
-                <td>✤	Leadership skills and ability to work with teams</td>
-              </tr>
-              <tr>
-                <td>✤ Adaptable </td>
-                <td>✤	Life long learner</td>
-              </tr>
-              <tr>
-                <td>✤ Communication and interpersonal skills 	</td>
-                <td>✤	Outside the box problem solver</td>
-              </tr>
-            </table>
-        </article>
-      </section>
 
-      <section id="projects" class="projects">
+            <h2>Soft Skills</h2>
+            <table style="width:100%">
+              <tbody id="skills">
+                <tr>
+                  <td>✤ Attention to detail</td>
+                  <td>✤ Leadership skills and ability to work with teams</td>
+                </tr>
+                <tr>
+                  <td>✤ Adaptable </td>
+                  <td>✤ Life long learner</td>
+                </tr>
+                <tr>
+                  <td>✤ Communication and interpersonal skills </td>
+                  <td>✤ Outside the box problem solver</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+
+        <section id="projects" class="projects">
           <h2>Projects</h2>
-              <article>
-                  <h3>Cookie Order Form</h3>
-                  <p>Project details listed here. Project languages and more. Team size: 1</p>
-              </article>
-              <article>
-                  <h3>Virtual Pet</h3>
-                  <p>Project details listed here. Project languages and more.Team size: 1</p>
-              </article>
-              <article>
-                  <h3>Product Review</h3>
-                  <p>Project details listed here. Project languages and more. Team size: 3</p>
-              </article>
-      </section>
-      <section id="additionalMedia" class="media">
+          <article>
+            <h3>Cookie Order Form</h3>
+            <p>Project details listed here. Project languages and more. Team size: 1</p>
+          </article>
+          <article>
+            <h3>Virtual Pet</h3>
+            <p>Project details listed here. Project languages and more.Team size: 1</p>
+          </article>
+          <article>
+            <h3>Product Review</h3>
+            <p>Project details listed here. Project languages and more. Team size: 3</p>
+          </article>
+        </section>
+        <section id="additionalMedia" class="media">
           <h2>Contact.</h2>
           <P>If you have any questions or comments, feel free to contact me!</P>
-          <ul class="icons">
-              <li>
+            <ul id="icons">
+                <li> 
                   <a href="mailto:samanthamariejae@gmail.com">
-                      <img id="icon" src="/images/email.png" alt="Email">
+                    <img src="/images/email.png" alt="Email">
                   </a>
-              </li>
-              <li>
+                </li>
+                <li> 
                   <a href="https://www.linkedin.com/in/samanthajohnson11">
-                      <img id="icon" src="/images/LinkedIn.jpg" alt="LinkedIn">
-                  </a>
-              </li>
-              <li>
+                    <img src="/images/LinkedIn.jpg" alt="LinkedIn">
+                  </a> 
+                </li> 
+                <br>
+                <li>
                   <a href="https://github.com/SamanthaJ2">
-                      <img id="icon" src="/images/github.png" alt="Github">
-                  </a>
-              </li>
-          </ul>
-      </section>
-  </main>
-    <script src="script.js"></script>
-<footer> © 2022 SamanthaJ2</footer>
-  </body>
+                    <img src="/images/github.png" alt="Github">
+                  </a>  
+                </li> 
+                <li> 
+                  <a href="./Samantha.Johnson.Resume.pdf" download="Samantha.Johnson.Resume">
+                    <img src="/images/download.png" alt="Download">
+                  </a>  
+                </li>
+            </ul>
+        </section>
+      </main>
+      <script src="script.js"></script>
+      <footer> © 2022 SamanthaJ2</footer>
+    </div>
+</body>
+
 </html>

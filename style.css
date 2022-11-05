@@ -14,13 +14,16 @@ body {
 
 .aboutMePic  {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   margin-left: 1em;
   margin-right: auto;
   float: right;
   border-top-right-radius: 40%;
   border-top-left-radius: 40%;
+  max-width: 100%;
+}
+
+table {
+  border-collapse:-5;
 }
 
 h1 {
@@ -29,48 +32,29 @@ h1 {
   font-size: 100px;
   font-variant:normal;
 }
+
 h2 {
   margin: 0;
 }
 
-table #skills {
+tbody {
   color: #333;
   line-height: 1.5;
 }
 
-#icon {
-  border-radius: 39%;
-}
-
-img {
-  max-width: 100%;
-}
-
 section ul {
   display: flex;
-  list-style: none;
-  flex-flow: row;
-  justify-content: space-around
-}
-
-.icons  {
-  display: flex;
-  padding-bottom: 1.5em;
-  padding-left: 0%;
-  list-style: none;
-  flex-flow: row;
-  justify-content: space-around;
-}
-
-.edu {
-  display: flex;
   padding-left: 1.5em;
-  padding-right: 1.5em;
-  padding-bottom: 1.5em;
   list-style: none;
+  flex-flow: row;
   justify-content: space-around;
-  max-height: 8whs ;
 }
+section ul img {
+  max-height: 8em;
+  margin-top: 2em;
+  border-radius: 25%;
+}
+
 
 .nav-links {
   list-style: none;
@@ -201,7 +185,7 @@ nav a:hover {
   margin: 0;
 }
 .aboutMe{
-opacity: calc(100);
+display: block;
 }
 
 .projects {
