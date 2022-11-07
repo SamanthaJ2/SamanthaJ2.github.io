@@ -33,6 +33,16 @@ h1 {
   font-variant:normal;
 }
 
+.aboutMe h2 {
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+}
+
+.projects h2 {
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
 h2 {
   margin: 0;
 }
@@ -42,9 +52,17 @@ tbody {
   line-height: 1.5;
 }
 
+.media h2 {
+  padding-bottom: 1em;
+}
+
 section ul {
   display: flex;
-  padding-left: 1.5em;
+  flex-flow: row;
+  gap: 10px;
+  padding-top: 3m;
+  padding-bottom: 5em;
+  padding-left: .5em;
   list-style: none;
   flex-flow: row;
   justify-content: space-around;
@@ -140,6 +158,7 @@ nav ul {
   padding-left: 5px;
 }
 
+
 nav ul li {
   text-transform: uppercase;
   color: #fff;
@@ -147,6 +166,7 @@ nav ul li {
   transform: translateX(-100%);
   transition: transform 0.4s ease-in;
 }
+
 
 nav ul li i {
   font-size: 20px;
